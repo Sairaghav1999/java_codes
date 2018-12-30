@@ -12,19 +12,25 @@ class pattern4
         {
             for(j=1;j<=n-i;j++)
             {
-                System.out.print(" "+"  ");
+                System.out.print(" "+"   ");
             }
             for(k=0;k<i;k++)
             {
                 p=(int) Math.pow(2,k);
+                if(p>9)
                 System.out.print(p+"  ");
+                else
+                System.out.print(p+"   ");
             }
             if(i!=1)
             {
                 for(m=i-2;m>=0;m--)
                 {
                     q=(int) Math.pow(2,m);
+                    if(q>9)
                     System.out.print(q+"  ");
+                    else
+                    System.out.print(q+"   ");
                 }
             }
             System.out.println();

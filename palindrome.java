@@ -13,8 +13,6 @@ class palindrome {
             a=x%10;
             x=x/10;
             s=(s*10)+a;
-            System.out.println("s ="+s);
-            System.out.println("a ="+a);
             a=0;
         }
         System.out.println(s);
