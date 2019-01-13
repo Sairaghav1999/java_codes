@@ -14,14 +14,28 @@ class op_matrix {
     }
     public static void main(String arg[]) throws IOException {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter the number of rows");
-        int n=Integer.parseInt(br.readLine());
-        System.out.println("Enter the number of columns");
-        int m=Integer.parseInt(br.readLine());
+        System.out.println("Enter the number of rows of matrix A");
+        int n1=Integer.parseInt(br.readLine());
+        System.out.println("Enter the number of columns of matrix A");
+        int m1=Integer.parseInt(br.readLine());
         int i,j;
-        double arr[][]=new double[n][m];
-        double add_arr[][]=new double[n][m];
-        double sub_arr[][]=new double[n][m];
+        double arr[][]=new double[n1][m1];
+        System.out.println("Enter the entries");
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<m;j++)
+            {
+                arr[i][j]= Double.parseDouble(br.readLine());
+            }
+        }
+        System.out.println("Enter the number of rows of matrix B");
+        int n2=Integer.parseInt(br.readLine());
+        System.out.println("Enter the number of columns of matrix B");
+        int m2=Integer.parseInt(br.readLine());
+        int i,j;
+        double arrb[][]=new double[n1][m1];
+        //double add_arr[][]=new double[n][m];
+        //double sub_arr[][]=new double[n][m];
         System.out.println("Enter the entries");
         for(i=0;i<n;i++)
         {
@@ -37,7 +51,7 @@ class op_matrix {
             switch(c)
             {
                 case 1:
-                add_arr[][]=sumMatrix(arr, b)
+                add_arr[][]=sumMatrix(arr, b);
                 break;
                 case 2:
                 break;
