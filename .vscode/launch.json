@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Serverlab",
+            "request": "launch",
+            "mainClass": "Serverlab",
+            "projectName": "Java 2019_3e23b1b9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Clientlab",
+            "request": "launch",
+            "mainClass": "Clientlab",
+            "projectName": "Java 2019_3e23b1b9"
+        }
+    ]
+}
